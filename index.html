@@ -1,6 +1,8 @@
 // Constants for HTML elements
 const tableContainer = document.getElementById("table-container");
 const excelTable = document.getElementById("excel-table");
+const meiquButton = document.getElementById("meiqu-btn");
+const yingquButton = document.getElementById("yingqu-btn");
 const h1Element = document.querySelector("h1");
 
 // Load Meiqu data by default
@@ -55,6 +57,48 @@ function generateTableFromJSON() {
 
   document.getElementById("excel-table").innerHTML = tableContent;
 }
+
+// Event listener for Meiqu button
+meiqubtn.addEventListener("click", () => {
+  loadDataFromJSON("meiqu.json");
+  h1Element.textContent = "美区🇺🇸";
+});
+
+// Event listener for Yingqu button
+yingqubtn.addEventListener("click", () => {
+  loadDataFromJSON("yingqu.json");
+  h1Element.textContent = "英区🇬🇧";
+});
+
+// Event listener for Aoqu button
+aoqubtn.addEventListener("click", () => {
+  loadDataFromJSON("aoqu.json");
+  h1Element.textContent = "澳区🇦🇺";
+});
+
+// Event listener for Gangqu button
+gangqubtn.addEventListener("click", () => {
+  loadDataFromJSON("gangqu.json");
+  h1Element.textContent = "港区🇭🇰";
+});
+
+// Event listener for Jiaqu button
+jiaqubtn.addEventListener("click", () => {
+  loadDataFromJSON("jiaqu.json");
+  h1Element.textContent = "加区🇨🇦";
+});
+
+// Event listener for Zhongqu button
+zhongqubtn.addEventListener("click", () => {
+  loadDataFromJSON("zhongqu.json");
+  h1Element.textContent = "中区🇨🇳";
+});
+
+// Event listener for Qita button
+qitabtn.addEventListener("click", () => {
+  loadDataFromJSON("qita.json");
+  h1Element.textContent = "其他💗";
+});
 
 // Update sticky column positions on scroll
 tableContainer.addEventListener("scroll", () => {
