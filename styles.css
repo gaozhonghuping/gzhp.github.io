@@ -243,3 +243,7 @@ body {
     border: 1px solid #ddd;
     text-align: center;
   }
+
+  html {
+    touch-action: manipulation; /* Ensures touch gestures are not interpreted as panning */
+}
