@@ -241,7 +241,12 @@
       "Brooks School": [""]
     },
     {
-      "Stevenson School": ["蹲蹲，想去", "三年前去仿过校，美得嘞","真的很漂亮 环境就是在一个景点里面 （literally tourist site) 周围娱乐不是很多。今年大学走向蛮好的 打高尔夫的 划船的建议来","爱抱团爱搞小团体"]
+      "Stevenson School": [
+        "蹲蹲，想去", 
+        "三年前去仿过校，美得嘞",
+        "真的很漂亮 环境就是在一个景点里面 （literally tourist site) 周围娱乐不是很多。今年大学走向蛮好的 打高尔夫的 划船的建议来",
+        "爱抱团爱搞小团体"
+      ]
     },
     {
       "The Loomis Chaffee School": ["dream school 最后去了加州某寄宿 想死"]
@@ -335,7 +340,9 @@
       ]
     },
     {
-      "Sandy Spring Friends School": ["学术不行加村 太恐怖了别来"]
+      "Sandy Spring Friends School": [
+        "学术不行加村 太恐怖了别来"
+      ]
     },
     {
       "Shattuck St.Mary School": [
@@ -349,7 +356,9 @@
       ]
     },
     {
-      "Academy of the Holy Cross": ["排名不高事挺多。。中国人巨少无比"]
+      "Academy of the Holy Cross": [
+        "排名不高事挺多。。中国人巨少无比"
+      ]
     },
     {
       "Annie Wright Schools": [
@@ -366,7 +375,9 @@
       ]
     },
     {
-      "Garrison Forest School": ["女校。全是女的。做好四年单身的准备。。"]
+      "Garrison Forest School": [
+        "女校。全是女的。做好四年单身的准备。。"
+      ]
     },
     {
       "Kimball Union Academy": [
@@ -412,7 +423,9 @@
       ]
     },
     {
-      "The Ethel Walker School": ["爽"]
+      "The Ethel Walker School": [
+        "爽"
+      ]
     },
     {
       "Worcester Academy": [
@@ -420,7 +433,9 @@
       ]
     },
     {
-      "Providence High School": ["好村啊中国人好少，没人说中文嘞"]
+      "Providence High School": [
+        "好村啊中国人好少，没人说中文嘞"
+      ]
     },
     {
       "Fountain Valley School of Colorado": [
@@ -451,7 +466,9 @@
       ]
     },
     {
-      "Rutgers Preparatory School": ["印度人多 其他还行 学费挺贵"]
+      "Rutgers Preparatory School": [
+        "印度人多 其他还行 学费挺贵"
+      ]
     },
     {
       "Cranbrook Schools": [
@@ -466,7 +483,9 @@
       ]
     },
     {
-      "Notre Dame High School Belmont": ["蹲一下，明年转学去g10"]
+      "Notre Dame High School Belmont": [
+        "蹲一下，明年转学去g10"
+      ]
     },
     {
       "Perkiomen School": [
@@ -488,10 +507,14 @@
       ]
     },
     {
-      "John A. Rowland High School":["副校长和学生发生关系然后被抓真的炸裂"]
+      "John A. Rowland High School":[
+        "副校长和学生发生关系然后被抓真的炸裂"
+      ]
     },
     {
-      "The Harker School, CA":["怎么说呢 学费6万一年 比uc还贵 但是吃的真的很好长胖了好多 学习压力很大 各种竞赛 推荐需要高压环境吃货朋友们来"]
+      "The Harker School, CA":[
+        "怎么说呢 学费6万一年 比uc还贵 但是吃的真的很好长胖了好多 学习压力很大 各种竞赛 推荐需要高压环境吃货朋友们来"
+      ]
     },
     {
       "Cheshire Academy":[
@@ -506,6 +529,16 @@
       "The Northwest School":[
         "本地亚裔没有人申请 常年做国内F1小留生意",
         "学术水平没什么大问题 但硬件设施真的一言难尽 不过胜在学费便宜"
+      ]
+    },
+    {
+      "Salisbury School, CT":[
+        "男校，同学很团结，体育很好，学术一半，中国人少，没有不良风气"
+      ]
+    },
+    {
+      "Idyllwild Arts Academy":[
+        "美国唯三私立艺校 海拔一千五百米深山老林里的艺术学校 每天碰运气随机看到野狼 每天12点断网 食堂不好吃 每天上午文化下午专业 音乐生和舞蹈生处于特别闲和特别忙的两个极端 舞蹈生日常早八晚九 中国人学美术音乐很多 交通不太方便 上下山四十分钟 去lax要三个小时 但是学校和边上小镇非常非常安全"
       ]
     }
   ]
