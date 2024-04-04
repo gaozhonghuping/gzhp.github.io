@@ -123,7 +123,11 @@
       ]
     },
     {
-      "The Thacher School": ["真的要养马，浑身上下有马粪味捏", "把我拒了。"]
+      "The Thacher School": [
+        "真的要养马，浑身上下有马粪味捏", 
+        "把我拒了。",
+        "以前在thacher 比赛过，感觉他们学校好好"
+      ]
     },
     {
       "St. Mark's School": [
@@ -577,6 +581,16 @@
     {
       "Cushing Academy":[
         "不咋地除非你学体育"
+      ]
+    },
+    {
+      "Pomfret School":[
+        "太漂亮了，体育设施太好了，还有看起来学生都很放松的"
+      ]
+    },
+    {
+      "The Park School of Baltimore MD":[
+        "太漂亮了，体育设施太好了，还有看起来学生都很放松的"
       ]
     }
   ]
