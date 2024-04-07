@@ -46,7 +46,7 @@ function generateTableFromJSON() {
         // Content in subsequent columns
         obj[title].forEach((item) => {
           // Check if item is a string and ends with ".jpg"
-          if (typeof item === "string" && item.toLowerCase().endsWith(".jpg")) {
+          if (item.toLowerCase().endsWith(".jpg")) {
             tableContent += `<td><img src="${item}" alt="Image"></td>`;
           } else {
             // Regular data cell
