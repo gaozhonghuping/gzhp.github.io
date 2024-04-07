@@ -42,10 +42,18 @@ function generateTableFromJSON() {
         rowNum++; // Increment row number counter
         // Title in second column
         tableContent += `<td><strong>${title}</strong></td>`;
+
         // Content in subsequent columns
         obj[title].forEach((item) => {
-          tableContent += `<td>${item}</td>`;
+          // Check if item is a string and ends with ".jpg"
+          if (typeof item === "string" && item.toLowerCase().endsWith(".jpg")) {
+            tableContent += `<td><img src="${item}" alt="Image"></td>`;
+          } else {
+            // Regular data cell
+            tableContent += `<td>${item}</td>`;
+          }
         });
+
         // Add empty cells if the row is not long enough
         for (let i = obj[title].length; i < maxItems; i++) {
           tableContent += "<td></td>";
