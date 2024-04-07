@@ -23,6 +23,11 @@ body {
     text-align: center;
   }
   
+  img {
+    max-width: 180px;
+    max-height: 180px;
+  }
+
   .buttons {
     margin-top: 35px;
     display: flex;
