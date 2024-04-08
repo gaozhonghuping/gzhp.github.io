@@ -102,6 +102,12 @@ zhongqubtn.addEventListener("click", () => {
   h1Element.textContent = "中区🇨🇳";
 });
 
+// Event listener for Xinqu button
+xinqubtn.addEventListener("click", () => {
+  loadDataFromJSON("xinqu.json");
+  h1Element.textContent = "新区🇸🇬";
+});
+
 // Event listener for Qita button
 qitabtn.addEventListener("click", () => {
   loadDataFromJSON("qita.json");
