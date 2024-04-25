@@ -1,263 +1,181 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2; /* Light Gray */
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  @media only screen and (max-width: 7.6in) {
-    /* Scale down content by 50% for devices with smaller screens */
-    body {
-        transform: scale(0.7);
-        transform-origin: top left; /* Preserve the top-left corner as the origin */
-    }
-  }
+/* Regular styles for the website */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Light Gray */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  h1 {
-    font-size: 32px;
-    color: #333; /* Dark Gray */
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  /* Subheader Styles */
-  h2 {
-    font-size: 24px; /* Adjust font size */
-    color: #666; /* Dark Gray */
-    text-align: center;
-  }
-  
-  img {
-    max-width: 180px;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
 
-  .buttons {
-    margin-top: 35px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+@media only screen and (max-width: 7.6in) {
+  /* Scale down content by 70% for devices with smaller screens */
+  .container {
+      transform: scale(0.7);
+      transform-origin: top left; /* Preserve the top-left corner as the origin */
   }
-  
-  #table-container {
-    margin: 20px auto;
-    width: 100%;
-    overflow-x: auto;
-  }
-  
-  #excel-table {
-    background-color: #fff;
-    margin: 10px;
-    border-collapse: collapse;
-    table-layout: fixed; /* Ensures fixed layout for consistent column widths */
-    width: auto; /* Allow the table to adjust its width based on content */
-  }
-  
-  #excel-table th:first-child,
-  #excel-table td:first-child,
-  #excel-table th:nth-child(2),
-  #excel-table td:nth-child(2) {
-    position: sticky;
-    background-color: #fff;
-    z-index: 1;
-  }
-  
-  #excel-table th:first-child,
-  #excel-table td:first-child {
-    left: 0;
-    font-size: 12px;
-    text-align: center;
-  }
-  
-  #excel-table th:nth-child(2),
-  #excel-table td:nth-child(2) {
-    left: 20px; /* Adjust as needed based on the width of the first column */
-  }
-  
-  #excel-table th:not(:first-child),
-  #excel-table td:not(:first-child) {
-    border: 1px solid #ddd;
-    padding: 8px;
-    min-width: 180px; /* Each cell has a minimum width of 180px */
-    max-width: 180px; /* Each cell has a maximum width of 180px */
-    word-wrap: break-word; /* Allowing text to wrap within cells */
-  }
-  
-  button {
-    background-color: #3498db; /* Blue */
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 12px;
-    text-align: center;
-  }
-  
-  button:hover {
-    background-color: #2980b9; /* Darker Blue */
-  }
-  
-  .watermark {
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    white-space: nowrap;
-    opacity: 0.45;
-  }
-  
-  .watermark-text {
-    position: absolute;
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.1);
-    transform-origin: top left;
-  }
-  
-  .watermark-text:nth-child(1) {
-    top: 9%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(2) {
-    top: 24%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(3) {
-    top: 39%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(4) {
-    top: 54%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(5) {
-    top: 69%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(6) {
-    top: 84%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(7) {
-    top: 99%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(8) {
-    top: 114%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(9) {
-    top: 129%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(10) {
-    top: 144%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  .watermark-text:nth-child(11) {
-    top: 159%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(12) {
-    top: 174%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(13) {
-    top: 189%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(14) {
-    top: 204%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(15) {
-    top: 219%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(16) {
-    top: 234%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(17) {
-    top: 249%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(18) {
-    top: 264%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  .watermark-text:nth-child(19) {
-    top: 279%; /* Adjusted top value */
-    left: -2%; /* Adjusted left value */
-    transform: rotate(-45deg);
-  }
-  
-  p {
-    margin-top: -10px;
-  }
-  
-  .not {
-    margin-top: 25px;
-    text-align: center;
-  }
-  
-  .row-number {
-    font-weight: bold;
-    color: #333;
-    width: 50px;
-    min-width: 18px;
-    max-width: 18px;
-    border: 1px solid #ddd;
-    text-align: center;
-  }
+}
 
-  html {
-    touch-action: manipulation; /* Ensures touch gestures are not interpreted as panning */
+h1 {
+  font-size: 32px;
+  color: #333; /* Dark Gray */
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Subheader Styles */
+h2 {
+  font-size: 24px; /* Adjust font size */
+  color: #666; /* Dark Gray */
+  text-align: center;
+}
+
+img {
+  max-width: 180px;
+}
+
+.buttons {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#table-container {
+  margin: 20px auto;
+  width: 100%;
+  overflow-x: auto;
+}
+
+#excel-table {
+  background-color: #fff;
+  margin: 10px;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures fixed layout for consistent column widths */
+  width: auto; /* Allow the table to adjust its width based on content */
+}
+
+#excel-table th:first-child,
+#excel-table td:first-child,
+#excel-table th:nth-child(2),
+#excel-table td:nth-child(2) {
+  position: sticky;
+  background-color: #fff;
+  z-index: 1;
+}
+
+#excel-table th:first-child,
+#excel-table td:first-child {
+  left: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+#excel-table th:nth-child(2),
+#excel-table td:nth-child(2) {
+  left: 20px; /* Adjust as needed based on the width of the first column */
+}
+
+#excel-table th:not(:first-child),
+#excel-table td:not(:first-child) {
+  border: 1px solid #ddd;
+  padding: 8px;
+  min-width: 180px; /* Each cell has a minimum width of 180px */
+  max-width: 180px; /* Each cell has a maximum width of 180px */
+  word-wrap: break-word; /* Allowing text to wrap within cells */
+}
+
+button {
+  background-color: #3498db; /* Blue */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker Blue */
+}
+
+.watermark {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  white-space: nowrap;
+  opacity: 0.45;
+}
+
+.watermark-text {
+  position: absolute;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.1);
+  transform-origin: top left;
+}
+
+.watermark-text:nth-child(1),
+.watermark-text:nth-child(2),
+.watermark-text:nth-child(3),
+.watermark-text:nth-child(4),
+.watermark-text:nth-child(5),
+.watermark-text:nth-child(6),
+.watermark-text:nth-child(7),
+.watermark-text:nth-child(8),
+.watermark-text:nth-child(9),
+.watermark-text:nth-child(10),
+.watermark-text:nth-child(11),
+.watermark-text:nth-child(12),
+.watermark-text:nth-child(13),
+.watermark-text:nth-child(14),
+.watermark-text:nth-child(15),
+.watermark-text:nth-child(16),
+.watermark-text:nth-child(17),
+.watermark-text:nth-child(18),
+.watermark-text:nth-child(19) {
+  top: calc(9% + 15% * (n - 1)); /* Adjusted top value */
+  left: -2%; /* Adjusted left value */
+  transform: rotate(-45deg);
+}
+
+p {
+  margin-top: -10px;
+}
+
+.not {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.row-number {
+  font-weight: bold;
+  color: #333;
+  width: 50px;
+  min-width: 18px;
+  max-width: 18px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+html {
+  touch-action: manipulation; /* Ensures touch gestures are not interpreted as panning */
 }
