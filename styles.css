@@ -9,6 +9,14 @@ body {
     position: relative;
   }
   
+  @media only screen and (max-width: 7.6in) {
+    /* Scale down content by 50% for devices with smaller screens */
+    body {
+        transform: scale(0.7);
+        transform-origin: top left; /* Preserve the top-left corner as the origin */
+    }
+  }
+
   h1 {
     font-size: 32px;
     color: #333; /* Dark Gray */
