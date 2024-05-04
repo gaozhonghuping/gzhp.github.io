@@ -1,6 +1,6 @@
 import json
 
-paths = ["aoqu.json", "taiqu.json", "gangqu.json", "jiaqu.json", "meiqu.json", "qita.json", "xinqu.json", "yingqu.json", "zhongqu.json"]
+paths = ["aoqu.json", "taiqu.json", "gangqu.json", "jiaqu.json", "meiqu.json", "qita.json", "xinqu.json", "yingqu.json", "zhongqu.json", "riqu.json"]
 
 for json_file_path in paths:
     # Read the JSON file
