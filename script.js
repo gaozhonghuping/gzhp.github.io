@@ -110,6 +110,12 @@ riqubtn.addEventListener("click", () => {
   h1Element.textContent = "日区🇯🇵";
 });
 
+// Event listener for Maqu button
+maqubtn.addEventListener("click", () => {
+  loadDataFromJSON("maqu.json");
+  h1Element.textContent = "马区🇲🇾";
+});
+
 // Event listener for Taiqu button
 taiqubtn.addEventListener("click", () => {
   loadDataFromJSON("taiqu.json");
